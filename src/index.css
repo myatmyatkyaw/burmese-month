@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* for image */
+.small-image{
+  width: 200px;
+  height: 200px;
+}
+
+/* month list */
+.month-preview {
+  padding: 10px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.month-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+}
+.month-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.month-preview a{
+  text-decoration: none;
+}
