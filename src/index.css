@@ -118,23 +118,21 @@ code {
 
 
 
-.image-container {
+/* .image-container {
   position: relative;
-}
+} */
 
-.text-overlay {
+
+/* .text-overlay {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  z-index: 1; /* Ensure the text overlay appears above the image */
-}
+  z-index: 1;
+} */
 
-.textdark{
-  color: #f7f4f2;
-}
 
 @keyframes floatAnimation {
   0% {
@@ -171,4 +169,42 @@ code {
 }
 .mmtest{
   font-family: 'mm';
+}
+
+ 
+@media (max-width: 768px){
+ 
+  .textdark {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media (min-width: 768px){
+  .text-overlay .textdark {
+    width: 800px;
+    height: 5px;
+    /* padding: 5px; */
+  }
+}
+
+.relative-container {
+  position: relative;
+  width: 100%; /* Ensure the container spans the full width */
+}
+
+.responsive-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text horizontally */
+}
+
+.textdark {
+  color: #f7f4f2;
 }
