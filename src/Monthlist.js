@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Map from './map.png'
 // Import your custom CSS file for styling
 
 const MonthList = (props) => {
@@ -37,7 +38,7 @@ const MonthList = (props) => {
   return (
     <div className='container'>
       <div className='monthlist'>
-        <h2 className='pt-5 bg-text-dark pb-5' data-aos="zoom-in">မြန်မာလများနှင့် ပွဲတော်များ</h2>
+        <h2 className='pt-5 bg-text-dark pb-5' data-aos="zoom-in"><img src={Map} style={{ width: 35, height: 50 }} /> မြန်မာလများနှင့် ပွဲတော်များ <img src={Map} style={{ width: 35, height: 50 }} /></h2>
         <Carousel
           swipeable={false}
           draggable={false}

@@ -9,6 +9,7 @@ import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import View from './View';
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+            <View />
             <Monthlist />
           </Route>
           
