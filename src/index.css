@@ -163,3 +163,12 @@ code {
 .btnn:hover {
   background-color: #fa8705; /* Darker green */
 }
+@font-face {
+  font-family: 'mm';
+  src: url('./fonts/Padauk/Padauk-Bold.ttf') format('ttf');
+       
+  /* Add additional font properties like font-weight, font-style if necessary */
+}
+.mmtest{
+  font-family: 'mm';
+}

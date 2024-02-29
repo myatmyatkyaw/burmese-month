@@ -38,7 +38,7 @@ const MonthList = (props) => {
   return (
     <div className='container'>
       <div className='monthlist'>
-        <h2 className='pt-5 bg-text-dark pb-5' data-aos="zoom-in"><img src={Map} style={{ width: 35, height: 50 }} /> မြန်မာလများနှင့် ပွဲတော်များ <img src={Map} style={{ width: 35, height: 50 }} /></h2>
+        <h2 className='pt-5 bg-text-dark pb-5' data-aos="zoom-in" data-aos-delay="2000"><img src={Map} style={{ width: 35, height: 50 }} /> မြန်မာလများနှင့် ပွဲတော်များ <img src={Map} style={{ width: 35, height: 50 }} /></h2>
         <Carousel
           swipeable={false}
           draggable={false}
