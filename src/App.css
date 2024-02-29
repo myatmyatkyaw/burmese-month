@@ -1,6 +1,15 @@
 .App {
   text-align: center;
+  background-color: rgb(240, 206, 165);
+  color: rgb(172, 77, 9);
+  padding-top: 1px;
+  padding-bottom: 200px;
+  
+  /* font-family: 'mm'; */
+
 }
+
+/*  */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +44,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* for font */
+@font-face {
+  font-family: 'mm';
+  src: url('./fonts/Regular.ttf') format('truetype'),
+       
+  /* Add additional font properties like font-weight, font-style if necessary */
 }

@@ -4,7 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import useFetch from './useFetch'; // Assuming you have created this custom hook
 
 
-const Monthdetail = () => {
+const Monthdetailheader = () => {
   const { id } = useParams();
   const { data: month, error, isPending } = useFetch('https://month-json-server.vercel.app/Tbl_Months/' + id);
   const history = useHistory();
@@ -22,33 +22,17 @@ const Monthdetail = () => {
   };
 
   return (
-    <div className="container my-4 monthdetail">
+    <div className="container my-4 ">
 
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {month && (
 
 <>
-{/* <h2 className="card-title text-center">{month.MonthMm}</h2>
-<h3 className="card-subtitle mb-2">{month.MonthEn}</h3> */}
-
-  
-<div class="containercol row d-flex justify-content-evenly">
-  <div class="column col-md-6">
-    <div class='group'>
-      <img src={process.env.PUBLIC_URL + '/' + month.ImageDetail} class="img-top " alt="month" style={{ width: '100%' }} data-aos="zoom-in"/>
-      <p class="card-text textlight" data-aos="zoom-in">{month.Description}</p>
-    </div>
-  </div>
-  <div class="column col-md-6">
-    <div class='group'>
-      <p class="card-text textlight" data-aos="zoom-in">{month.Detail}</p>
-    </div>
-  </div>
-</div>
-
-  
-  
+<h2 className=" text-center" data-aos="zoom-in">{month.MonthMm}  [{month.MonthEn}]</h2><br/>
+<h3 className=" text-center mb-4" data-aos="zoom-in">{month.FestivalMm} [{month.FestivalEn}]</h3>
+<button className="btn btn-outline-dark me-3" onClick={handleBack} data-aos="zoom-in">Back</button>
+  <button className="btn btn-outline-danger" onClick={handleClick} data-aos="zoom-in">Delete</button>
 
 </>
 
@@ -57,4 +41,4 @@ const Monthdetail = () => {
   )
 }
 
-export default Monthdetail
+export default Monthdetailheader
