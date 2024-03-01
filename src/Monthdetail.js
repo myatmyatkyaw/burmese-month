@@ -24,7 +24,7 @@ const Monthdetail = () => {
   return (
     <div className="container my-4 monthdetail">
 
-      {isPending && <div>Loading...</div>}
+      {isPending && <div style={{height: '100vh' }}>Loading...</div>}
       {error && <div>{error}</div>}
       {month && (
 

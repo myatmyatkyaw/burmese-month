@@ -193,6 +193,8 @@ code {
 }
 
 .responsive-image {
+  position: relative;
+  animation: floatAnimation 2.5s infinite alternate;
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
 }
@@ -207,4 +209,7 @@ code {
 
 .textdark {
   color: #f7f4f2;
+}
+.mmtestone{
+  text-align: left;
 }
